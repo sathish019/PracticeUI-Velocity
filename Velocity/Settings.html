@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Settings</title>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="Theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="prime-bg-color dp-flex">
+    <div class="bg-white w-5 dp-flex-c">
+        <span class="fa fa-bars pd-20 pointer icon-color"></span>
+        <a class="mg-t-20 fa fa-cubes cust-menu font-st-none icon-color" href="Home.html" ></a>
+        <a class="fa fa-database cust-menu font-st-none icon-color" href="Analytics.html"></a>
+        <a class="fa fa-car cust-menu font-st-none icon-color" href="Vehicles.html"></a>
+        <a class="fa fa-truck cust-menu font-st-none icon-color" href="Services.html"></a>
+        <a class="fa fa-map-o cust-menu font-st-none icon-color" href="Map.html"></a>
+        <a class="fa fa-envelope-o cust-menu font-st-none icon-color" href="Chat.html"></a>
+        <a class="fa fa-cogs cust-menu font-st-none icon-color" href="Settings.html"></a>
+    </div>
+    <div class="w-95">
+        <div class="bg-white h-60p dp-flex-sp-bw">
+            <div class="mg-t-15p mg-l-5">
+                <img src="Base/Logo.png" alt="logo"/>
+            </div>
+            <div class="mg-t-20p mg-r-5">
+                <div class="fa fa-bell-o mg-r-15p pointer icon-color"></div>
+                <a class="fa fa-envelope-o font-st-none icon-color mg-r-15p" href="Chat.html"></a>
+                <a class="fa fa-user-circle-o font-st-none icon-color" href="UserProfile.html"></a>
+            </div>
+        </div>
+
+        <div class="mg-l-5 mg-r-5 mg-t-40p">
+            <div class="fs-28">Settings</div>
+            <form class="mg-t-20p bg-white pd-20 fs-12" action="">
+                <div class="icon-color">PERSONAL DATA</div>
+                <div class="mg-t-15p">Use this page to update your contact information and change your password.</div>
+                <div class="mg-t-20p icon-color">EMAIL</div>
+                <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder="samplemail@mail.com"></input>
+                <div class="dp-flex mg-t-20p">
+                    <div>
+                        <div class="icon-color">FIRST NAME</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder="Timothy"></input>
+                    </div>
+                    <div class="mg-l-20p">
+                        <div class="icon-color">LAST NAME</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder="Cain"></input>
+                    </div>
+                    <div class="mg-l-20p">
+                        <div class="icon-color">BIRTH DATE</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder="09/10/1988"></input>
+                    </div>
+                </div>
+                <div class="dp-flex mg-t-20p">
+                    <div>
+                        <div class="icon-color">FIRST NAME</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder="***********"></input>
+                    </div>
+                    <div class="mg-l-20p">
+                        <div class="icon-color">LAST NAME</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder=""></input>
+                    </div>
+                    <div class="mg-l-20p">
+                        <div class="icon-color">BIRTH DATE</div>
+                        <input class="mg-t-5p pd-10 cust-input-border" type="text" placeholder=""></input>
+                    </div>
+                </div>
+                <input class="cust-prof-label mg-t-20p w-18 align-font-center pointer" type="submit" value="Save Changes"></input>
+            </form>
+
+        <div class="mg-t-20p bg-white pd-20 fs-12">
+            <div class="icon-color">INTEGRATIONS</div>
+            <div class="mg-t-15p">Manage third-party app integrations.</div>
+            <div class="mg-t-20p">
+                <div class="dp-flex cust-integ-label w-18">
+                    <div class="circle-48 prime-bg-color"></div>
+                    <div class="dp-flex-c mg-l-10p">
+                        <div class="mg-t-10p">Invision</div>
+                        <div class="icon-color">Boards and Prototypes</div>
+                    </div>
+                </div>
+            </div>
+            <div class="mg-t-20p">
+                <div class="dp-flex cust-integ-label w-18">
+                    <div class="circle-48 prime-bg-color"></div>
+                    <div class="dp-flex-c mg-l-10p">
+                        <div class="mg-t-10p">Invision</div>
+                        <div class="icon-color">Boards and Prototypes</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="mg-t-20p bg-white pd-20 fs-12">
+            <div class="icon-color">NOTIFICATIONS</div>
+            <div class="mg-t-15p">Control your notification and auto-follow settings.</div>
+            <div class="mg-t-20p w-23 dp-flex-sp-bw">
+                <div class="dp-flex-c">
+                    <div>Email Notification</div>
+                    <div class="icon-color mg-t-5p">Commits data and history</div>
+                </div>
+                <label class="switch">
+                    <input class="cust-toggle-btn" type="checkbox">
+                    <span class="slider round"></span>
+                </label>                  
+            </div>
+            <div class="mg-t-20p w-23 dp-flex-sp-bw">
+                <div class="dp-flex-c">
+                    <div>Push Notification</div>
+                    <div class="icon-color mg-t-5p">Commits data and history</div>
+                </div>
+                <label class="switch">
+                    <input class="cust-toggle-btn" type="checkbox">
+                    <span class="slider round"></span>
+                </label>                  
+            </div>
+        </div>
+
+        <div class="mg-t-20p bg-white pd-20 fs-12">
+            <div class="icon-color">THEME</div>
+            <div class="mg-t-15p">Select a color scheme for you Velocity app.</div>
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>

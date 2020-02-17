@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Map</title>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="Theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="prime-bg-color dp-flex">
+    <div class="bg-white w-5 dp-flex-c">
+        <span class="fa fa-bars pd-20 pointer icon-color"></span>
+        <a class="mg-t-20 fa fa-cubes cust-menu font-st-none icon-color" href="Home.html" ></a>
+        <a class="fa fa-database cust-menu font-st-none icon-color" href="Analytics.html"></a>
+        <a class="fa fa-car cust-menu font-st-none icon-color" href="Vehicles.html"></a>
+        <a class="fa fa-truck cust-menu font-st-none icon-color" href="Services.html"></a>
+        <a class="fa fa-map-o cust-menu font-st-none icon-color" href="Map.html"></a>
+        <a class="fa fa-envelope-o cust-menu font-st-none icon-color" href="Chat.html"></a>
+        <a class="fa fa-cogs cust-menu font-st-none icon-color" href="Settings.html"></a>
+    </div>
+    <div class="w-95">
+        <div class="bg-white h-60p dp-flex-sp-bw">
+            <div class="mg-t-15p mg-l-5">
+                <img src="Base/Logo.png" alt="logo"/>
+            </div>
+            <div class="mg-t-20p mg-r-5">
+                <div class="fa fa-bell-o mg-r-15p pointer icon-color"></div>
+                <a class="fa fa-envelope-o font-st-none icon-color mg-r-15p" href="Chat.html"></a>
+                <a class="fa fa-user-circle-o font-st-none icon-color" href="UserProfile.html"></a>
+            </div>
+        </div>
+
+        <div class="prime-bg-color mg-t-40p mg-l-5 mg-r-5">
+            <div class="fs-28">MAP</div>
+            <div class="mg-t-10p">
+                <div id="googleMap" class="w-100 h-400p"></div>
+            </div>
+        </div>
+
+        <div class="dp-flex-sp-bw mg-l-5 mg-r-5 mg-t-20p">
+            <div class="w-55 bg-white ">
+                <div class="fs-12 pd-20 dp-flex-sp-bw">
+                    <div>PASSENGER INFO</div>
+                    <div class="fa fa-ellipsis-h"></div>
+                </div>
+                <div class="dp-flex-sp-bw fs-12">
+                    <div class="w-32 pd-20">
+                        <div class="dp-flex">
+                            <div class="circle-34 prime-bg-color"></div>
+                            <div class="dp-flex-c mg-l-10p mg-t-5p">
+                                <div>Nora M. Buchanan</div>
+                                <div>4 interactions</div>
+                            </div>
+                        </div>
+                        <div class="mg-t-15p icon-color">EMAIL</div>
+                        <div class="mg-t-5p">invison@invisionapp.com</div>
+                        <div class="mg-t-15p icon-color">PHONE</div>
+                        <div class="mg-t-5p">+144-567-87089</div>
+                        <div class="mg-t-15p icon-color">LOCATION</div>
+                        <div class="mg-t-5p">New York,NY</div>
+                    </div>
+                    <div class="w-55 pd-20 fs-34">
+                        <div>
+                            <span class="cust-pay-label pointer fa fa-cc-paypal"></span>
+                            <span class="cust-pay-label pointer fa fa-cc-visa mg-l-20p"></span>
+                        </div>
+                        <div class="mg-t-20p">
+                            <span class="cust-pay-label pointer fa fa-cc-mastercard"></span>
+                            <span class="cust-pay-label pointer fa fa-cc-amex mg-l-20p"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="w-43 dp-flex-c">
+                <div class="bg-white fs-12 pd-20">
+                    <div class="dp-flex-sp-bw">
+                        <div>TRIPS BY WEEKDAY</div>
+                        <div class="fa fa-ellipsis-h"></div>
+                    </div>
+                    <div class="dp-flex-sp-bw mg-t-15p w-80">
+                        <div class="dp-flex-c">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="fa fa-check blue-color pl-10 pt-10"></span>
+                                <span class="cust-hline"></span>
+                            </div>
+                            <div class="mg-t-5p">Jackson Heights</div>
+                            <div class="mg-t-5p icon-color">76-24 56th Street</div>
+                        </div>
+                        <div class="dp-flex-c">
+                            <div class="circle-34 prime-bg-color">
+                                <span class="fa fa-map-marker blue-color pl-15 pt-10"></span>
+                            </div>
+                            <div class="mg-t-5p">Jackson Heights</div>
+                            <div class="mg-t-5p icon-color">76-24 56th Street</div>
+                        </div>
+                    </div>
+                    <div class="mg-t-15p border-btm-line"></div>
+                    <div class="mg-t-15p dp-flex-sp-bw">
+                        <div class="dp-flex-c">
+                            <div>12.3 km</div>
+                            <div class="icon-color mg-t-5p">Distance</div>
+                        </div>
+                        <div class="dp-flex-c">
+                            <div>12.3 km</div>
+                            <div class="icon-color mg-t-5p">Distance</div>
+                        </div>
+                        <div class="dp-flex-c">
+                            <div>12.3 km</div>
+                            <div class="icon-color mg-t-5p">Distance</div>
+                        </div>
+                        <div class="dp-flex-c">
+                            <div>12.3 km</div>
+                            <div class="icon-color mg-t-5p">Distance</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="mg-t-20p fs-12 bg-white pd-20 dp-flex">
+                    <div class="fa fa-video-camera icon-color"></div>
+                    <div class="dp-flex-sp-bw w-95">
+                        <div class="mg-l-20p">Activate interior video</div>
+                        <div class="fa fa-video-camera icon-color"></div>
+                    </div>
+                    
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwC_MpNgSNNscexsIx2TWfD8lSH2R0CpA&callback=myMap"></script>
+</body>
+
+</html>

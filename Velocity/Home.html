@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Home</title>
+    <link rel="stylesheet" type="text/css" href="Main.css">
+    <link rel="stylesheet" type="text/css" href="Theme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body class="prime-bg-color dp-flex">
+    <div class="bg-white w-5 dp-flex-c">
+        <span class="fa fa-bars pd-20 pointer icon-color"></span>
+        <a class="mg-t-20 fa fa-cubes cust-menu font-st-none icon-color" href="Home.html" ></a>
+        <a class="fa fa-database cust-menu font-st-none icon-color" href="Analytics.html"></a>
+        <a class="fa fa-car cust-menu font-st-none icon-color" href="Vehicles.html"></a>
+        <a class="fa fa-truck cust-menu font-st-none icon-color" href="Services.html"></a>
+        <a class="fa fa-map-o cust-menu font-st-none icon-color" href="Map.html"></a>
+        <a class="fa fa-envelope-o cust-menu font-st-none icon-color" href="Chat.html"></a>
+        <a class="fa fa-cogs cust-menu font-st-none icon-color" href="Settings.html"></a>
+    </div>
+    <div class="w-95">
+        <div class="bg-white h-60p dp-flex-sp-bw">
+            <div class="mg-t-15p mg-l-5">
+                <img src="Base/Logo.png" alt="logo"/>
+            </div>
+            <div class="mg-t-20p mg-r-5">
+                <div class="fa fa-bell-o mg-r-15p pointer icon-color"></div>
+                <a class="fa fa-envelope-o font-st-none icon-color mg-r-15p" href="Chat.html"></a>
+                <a class="fa fa-user-circle-o font-st-none icon-color" href="UserProfile.html"></a>
+            </div>
+        </div>
+
+        <div class="mg-l-5 mg-r-5 mg-t-40p">
+            <div class="dp-flex-sp-bw">
+                <div class="w-49">
+                    <div class="bg-white dp-flex-r">
+                        <div class="w-49 pd-20 fs-15 mg-l-10p mg-t-20p">
+                            OPERATING SCORE
+                        </div>
+                        <div class="w-49 pd-20">
+                            <div class="fs-28">Welcome to Velocity</div>
+                            <div class="fs-15 mg-t-5p">All cars are operating well.
+                                  There were 1,233 trip since your last login. 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dp-flex-sp-bw mg-t-20p">
+                        <div class="w-48 bg-white">
+                            <div class="pd-20">
+                                <div class="fs-12">VEHICLES ON TRACK</div>
+                                <div class="mg-t-5p">
+                                    <span class="fs-48">1,423</span><span class="fs-28">&nbsp;cars</span>
+                                </div>
+                                <div class="mg-t-5p fs-12 failure-color fa fa-arrow-down">&nbsp;-7.6%</div>
+                            </div>
+                        </div>
+                        <div class="w-48 bg-white">
+                            <div class="pd-20">
+                                <div class="fs-12">DISTANCE DRIVEN</div>
+                                <div class="mg-t-5p">
+                                    <span class="fs-48">158.3</span><span class="fs-28">&nbsp;mi</span>
+                                </div>
+                                <div class="mg-t-5p fs-12 success-color fa fa-arrow-up">&nbsp;+2.4%</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="w-49 bg-white">
+                    <div class="pd-20 fs-12">TODAY'S TRIPS</div>
+                </div>
+            </div>
+
+            <div class="mg-t-20p bg-white">
+                <div class="fs-12 bg-white pd-20">
+                    FLEET ACTIVITY MAP
+                </div>
+                <div id="googleMap" class="w-100 h-300p"></div>
+            </div>
+
+            <div class="mg-t-20p dp-flex-sp-bw">
+                <div class="w-32 bg-white">
+                    <div class="fs-12 pd-20 dp-flex-sp-bw">
+                        <div>TOP DRIVERS</div>
+                        <div class="fa fa-ellipsis-h"></div>
+                    </div>
+
+                    <div class="fs-12" id="drivers-list"></div>
+                    
+                </div>
+                <div class="w-32 bg-white">
+                    <div class="fs-12 pd-20 dp-flex-sp-bw">
+                        <div>TRIPS BY TYPE</div>
+                        <div class="fa fa-ellipsis-h"></div>
+                    </div>
+                </div>
+                <div class="w-32 bg-white">
+                    <div class="fs-12 pd-20 dp-flex-sp-bw">
+                        <div>SERVICE REMAINDERS</div>
+                        <div class="fa fa-ellipsis-h"></div>
+                    </div>
+                    <div class="fs-12" id="service-remainder"></div>                 
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="main.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwC_MpNgSNNscexsIx2TWfD8lSH2R0CpA&callback=myMap"></script>
+</body>
+
+</html>
